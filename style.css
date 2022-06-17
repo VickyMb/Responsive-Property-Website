@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9aX8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pacifico/v22/FwZY7-Qmy14u9lezJ96A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rasa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rasa/v14/xn76YHIn1mWmVKl8ZtAM9NrJfN5GJW41.ttf) format('truetype');
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.site-heading {
+  color: #002136;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+.site-text {
+  font-size: 15px;
+  color: #494949;
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 36px 30px 0px 30px;
+  z-index: 2;
+}
+@media (max-width: 1060px) {
+  .header {
+    flex-direction: column;
+  }
+}
+.header .header-logo {
+  position: relative;
+  width: 160px;
+  margin-top: -21px;
+}
+.header .header-logo img {
+  width: 100%;
+}
+.header .nav-icon {
+  position: absolute;
+  top: 9px;
+  width: 34px;
+  right: 10px;
+  display: none;
+}
+@media (max-width: 1060px) {
+  .header .nav-icon {
+    display: block;
+  }
+}
+.header .nav-bar {
+  display: flex;
+  position: relative;
+}
+@media (max-width: 1060px) {
+  .header .nav-bar {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .header .nav-bar.show {
+    display: block;
+    transition: all 0.3s ease;
+    opacity: 1;
+    pointer-events: auto;
+    position: fixed;
+    width: 100%;
+    background: #002136;
+    left: 0px;
+    top: 90px;
+    height: 90vh;
+    padding-left: 30px;
+    z-index: 2;
+  }
+}
+.header .nav-bar li {
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (max-width: 1060px) {
+  .header .nav-bar li {
+    margin: 25px 0px;
+  }
+}
+.header .nav-bar li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #494949;
+  font-weight: 500;
+  position: relative;
+}
+@media (max-width: 1060px) {
+  .header .nav-bar li a {
+    color: #fff;
+  }
+}
+.header .nav-bar li a:hover {
+  color: #002136;
+  font-weight: 500;
+}
+@media (max-width: 1060px) {
+  .header .nav-bar li a:hover {
+    color: #fff;
+  }
+}
+.header .nav-bar li a:hover:after {
+  width: 50px;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1060px) {
+  .header .nav-bar li a:hover:after {
+    display: none;
+  }
+}
+.header .nav-bar li a:after {
+  content: "";
+  width: 0px;
+  left: 50%;
+  height: 5px;
+  background-color: #d71e35;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: -15px;
+  transition: all 0.3s ease-in-out;
+}
+.banner-container {
+  height: 490px;
+  background-image: url(images/Mask-Group.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin-top: 80px;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 810px) {
+  .banner-container {
+    height: 335px;
+  }
+}
+.about-container {
+  width: 720px;
+  margin: 90px auto;
+  text-align: center;
+}
+@media (max-width: 730px) {
+  .about-container {
+    width: 100%;
+    margin: 50px auto;
+    padding: 0px 31px;
+    box-sizing: border-box;
+  }
+}
+.about-container .site-text {
+  margin-top: 20px;
+}
+.business-site {
+  width: 940px;
+  text-align: center;
+  background-color: #E3DDD9;
+  margin: 100px auto;
+  padding: 20px 0px;
+}
+@media (max-width: 950px) {
+  .business-site {
+    width: calc(100% - 62px);
+    margin: auto;
+    padding: 20px;
+  }
+}
+.business-site .business-text {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  width: 710px;
+  margin: 0px auto;
+}
+@media (max-width: 950px) {
+  .business-site .business-text {
+    width: 100%;
+    text-align: center;
+  }
+}
+.icons-container {
+  width: 940px;
+  margin: 0px auto;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 950px) {
+  .icons-container {
+    width: 100%;
+    padding-left: 30px;
+    margin-top: 50px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 550px) {
+  .icons-container {
+    display: block;
+  }
+}
+.icons-container .each-icon-container {
+  width: 50%;
+  display: flex;
+}
+@media (max-width: 550px) {
+  .icons-container .each-icon-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.icons-container .each-icon-container:nth-child(3) img {
+  margin-top: -6px;
+}
+.icons-container .each-icon-container img {
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}

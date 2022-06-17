@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive-website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+      <!-- Navigation -->
+    <header class="header">
+      <a class="header-logo"><img src="images/logo.svg" /></a>
+      <a href="#" class="nav-icon"><img src="images/Menu-button.svg" /></a>
+
+      <ul class="nav-bar">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">Space to thrive</a></li>
+        <li><a href="#" class="nav-link">Plumari cares</a></li>
+        <li><a href="#" class="nav-link">Our partners</a></li>
+        <li><a href="#" class="nav-link">News</a></li>
+        <li><a href="#" class="nav-link">About us</a></li>
+        <li><a href="#" class="nav-link">contact us</a></li>
+      </ul>
+    </header>
+
+    <!-- Header Banner -->
+    <div class="banner-container">
+    </div>
+
+    <!-- About container -->
+    <div class="about-container">
+      <h2 class="site-heading">About Us</h2>
+      <p class="site-text">A list of frequently asked questions has been prepared to assist all travellers to South Africa to take the necessary steps to ensure their application for a eVisa is correctly completed, and that all the necessary information is provided for your eVisa application to be processed.</p>
+      <p class="site-text">A list of frequently asked questions has been prepared to assist all travellers to South Africa to take the necessary steps to ensure their application for a eVisa is correctly completed, and that all the necessary information is provided for your eVisa application to be processed.</p>
+    </div>
+
+    <!-- Business Block -->
+    <div class="business-site">
+      <p class="business-text">"we are a family run business for us it is not just business,it is personal"</p>
+    </div>
+
+    <!-- Icons container -->
+    <div class="icons-container">
+      <div class="each-icon-container">
+        <img alt="" src="images/icon-1.svg" />
+        <p class="site-text">Over 90 years combined property development & management experience</p>
+      </div>
+
+      <div class="each-icon-container">
+        <img alt="" src="images/icon-1.svg" />
+        <p class="site-text">200.000 sqm</p>
+      </div>
+
+      <div class="each-icon-container">
+        <img alt="" src="images/icon-2.svg" />
+        <p class="site-text">99 Properties</p>
+      </div>
+
+      <div class="each-icon-container">
+        <img alt="" src="images/icon-1.svg" />
+        <p class="site-text">500 tenants and counting</p>
+      </div>
+
+    </div>
+
+
+  
+    <script type="text/javascript">
+        document.querySelector('.nav-icon').addEventListener('click', toggleNav);
+        function toggleNav(){
+            document.querySelector('.nav-bar').classList.toggle('show');
+        }
+    </script>
+  </body>
+</html>
